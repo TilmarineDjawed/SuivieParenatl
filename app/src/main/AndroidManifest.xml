@@ -13,7 +13,10 @@
         android:theme="@style/Theme.SuivieParenatl"
         tools:targetApi="31">
         <activity
-            android:name=".mainparent"
+            android:name=".mainprof"
+            android:exported="false" />
+        <activity
+            android:name=".Mainparent"
             android:exported="false" />
         <activity
             android:name=".Login"

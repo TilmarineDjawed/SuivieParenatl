@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homework"
+    android:background="#ebebf9"
+    >
+
+    <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnlayout">
+
+            <ImageButton
+                android:id="@+id/goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="@+id/head"
+                app:layout_constraintEnd_toStartOf="@+id/grades"
+                app:layout_constraintStart_toStartOf="@+id/head"
+                app:layout_constraintTop_toTopOf="@+id/head" />
+
+            <View
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/headerparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/grades"
+                android:layout_width="164dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Grades"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/head"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/head"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnstule"
+                android:text="Timestre 1"
+                android:textColor="#1261A0"
+                android:textStyle="bold"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btnstule"
+                android:text="Timestre 2"
+                android:textColor="#1261A0"
+                android:textStyle="bold"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button4"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnstule"
+                android:text="Timestre 3"
+                android:textColor="#1261A0"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/contributeCard3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                android:elevation="12dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/scrollView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:fillViewport="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button3"
+                    app:layout_constraintVertical_bias="0.144">
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+                        app:layout_constraintBottom_toTopOf="@id/sciencelayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <TextView
+                            android:id="@+id/matieretxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="15dp"
+                            android:gravity="left"
+                            android:text="Matiere"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/coeftxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="50dp"
+                            android:text="Coef"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cc1txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:gravity="left"
+                            android:text="C.C 1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cc2txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginEnd="30dp"
+                            android:text="C.C 2"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/examtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:gravity="right"
+                            android:text="EXAM"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sciencelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="5"
+                        app:layout_constraintBottom_toTopOf="@id/centerView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layout2"
+                        app:layout_constraintVertical_bias="0.275">
+
+                        <TextView
+                            android:id="@+id/sciencetxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="SCIENCE"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sciencecoef"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sciencecc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="left"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sciencecc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/scienceexam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/centerView"
+                        android:layout_width="330dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#3397E8"
+                        app:layout_constraintBottom_toTopOf="@+id/mathlayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sciencelayout" />
+
+                    <LinearLayout
+                        android:id="@+id/mathlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:weightSum="5"
+                        app:layout_constraintBottom_toTopOf="@id/centerView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sciencelayout"
+                        app:layout_constraintVertical_bias="0.275">
+
+                        <TextView
+                            android:id="@+id/mathtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="MATH"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mathcoef"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mathcc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="left"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mathcc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mathexam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/centerView2"
+                        android:layout_width="330dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#3397E8"
+                        app:layout_constraintBottom_toTopOf="@id/physiquelayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mathlayout"
+                        app:layout_constraintVertical_bias="0.238" />
+
+
+                    <LinearLayout
+                        android:id="@+id/physiquelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:weightSum="5"
+                        app:layout_constraintBottom_toTopOf="@id/centerView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/centerView2"
+                        app:layout_constraintVertical_bias="0.275">
+                    <TextView
+                        android:id="@+id/physiquetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="PHYSIQUE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                      />
+                        <TextView
+                            android:id="@+id/physiquecoef"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/physiquecc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="left"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/physiquecc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/physiqueexam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/centerView3"
+                        android:layout_width="330dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#3397E8"
+                        app:layout_constraintBottom_toTopOf="@+id/arabiclayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/physiquelayout" />
+
+                    <LinearLayout
+                        android:id="@+id/arabiclayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:weightSum="5"
+                        app:layout_constraintBottom_toTopOf="@id/centerView4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/centerView3"
+                        app:layout_constraintVertical_bias="0.275">
+
+                        <TextView
+                            android:id="@+id/arabictxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="ARABIC"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/arabiccoef"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/arabiccc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="left"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/arabiccc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/arabicexam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="0.0"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/centerView4"
+                        android:layout_width="330dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#3397E8"
+                        app:layout_constraintBottom_toTopOf="@id/frenchlayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/arabiclayout" />
+
+                    <LinearLayout
+                        android:id="@+id/frenchlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:weightSum="5"
+                        app:layout_constraintBottom_toTopOf="@id/centerView5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/centerView4"
+                        app:layout_constraintVertical_bias="0.275">
+                    <TextView
+                        android:id="@+id/frenchtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="FRENCH"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                         />
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/centerView5"
+                        android:layout_width="330dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#3397E8"
+                        app:layout_constraintBottom_toTopOf="@+id/englishlayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/frenchlayout" />
+
+
+                    <LinearLayout
+                        android:id="@+id/englishlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:weightSum="5"
+                        app:layout_constraintBottom_toTopOf="@id/centerView6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/centerView5"
+                        app:layout_constraintVertical_bias="0.275">
+                    <TextView
+                        android:id="@+id/englishtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="ENGLISH"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                         />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/centerView6"
+                        android:layout_width="330dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#3397E8"
+                        app:layout_constraintBottom_toTopOf="@id/artlayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/englishlayout"
+/>
+                    <LinearLayout
+                    android:id="@+id/artlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:weightSum="5"
+                    app:layout_constraintBottom_toTopOf="@id/centerView7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/centerView6"
+                    app:layout_constraintVertical_bias="0.275">
+                    <TextView
+                        android:id="@+id/arttxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="ART"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                       />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/centerView7"
+                        android:layout_width="330dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#3397E8"
+                        app:layout_constraintBottom_toTopOf="@+id/sportlayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/artlayout" />
+                    <LinearLayout
+                        android:id="@+id/sportlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:weightSum="5"
+                        app:layout_constraintBottom_toTopOf="@id/centerView7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent"
+                        app:layout_constraintVertical_bias="0.275">
+                    <TextView
+                        android:id="@+id/sporttxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="SPORT"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                       />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
