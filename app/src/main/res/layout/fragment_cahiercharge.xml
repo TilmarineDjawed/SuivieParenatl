@@ -32,10 +32,11 @@
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="Bouton de retour"
         android:background="?attr/selectableItemBackground"
         android:padding="8dp"
         android:src="@drawable/back"
@@ -179,10 +180,11 @@
                         android:textStyle="bold"
                         android:layout_marginStart="6dp"
                         />
-                    <TextView
+                    <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="12/04/2024 "
+                        android:hint="../../.."
+                        android:minHeight="48dp"
                         android:gravity="left"
                         android:textSize="23sp"
                         android:textStyle="bold"
@@ -193,11 +195,11 @@
                 </LinearLayout>
 
 
-                <TextView
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="le cours ...... "
-                    android:gravity="left"
+                    android:hint="le cours"
+                    android:minHeight="48dp"                    android:gravity="left"
                     android:layout_marginTop="8dp"
                     android:textSize="23sp"
                     android:textStyle="bold"

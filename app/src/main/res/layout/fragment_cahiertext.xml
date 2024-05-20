@@ -32,10 +32,11 @@
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="Bouton de retour"
         android:background="?attr/selectableItemBackground"
         android:padding="8dp"
         android:src="@drawable/back"
@@ -160,10 +161,11 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="exercices 1-10 page 35"
+                    android:hint="les exercices"
+                    android:minHeight="48dp"
                     android:textSize="23sp"
                     android:textStyle="bold"
                     android:layout_marginStart="6dp"

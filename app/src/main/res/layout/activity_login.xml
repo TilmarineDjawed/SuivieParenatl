@@ -25,16 +25,16 @@
 
             <ImageButton
                 android:id="@+id/back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:contentDescription="Bouton de retour"
                 android:background="?attr/selectableItemBackground"
                 android:padding="8dp"
                 android:src="@drawable/back"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="200dp"
@@ -106,6 +106,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/edittxt"
         android:hint="email.com"
+        android:minHeight="48dp"
         android:inputType="textEmailAddress"
         android:padding="12dp"
         android:singleLine="true"
@@ -139,7 +140,7 @@
         android:drawableRight="@drawable/baseline_remove_red_eye_24"
         android:hint="Password"
         android:inputType="textPassword"
-
+        android:minHeight="48dp"
         android:padding="12dp"
         android:singleLine="true"
         android:textSize="14sp"
