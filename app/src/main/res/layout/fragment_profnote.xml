@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/EditText"
         android:layout_width="164dp"
         android:layout_height="60dp"
         android:gravity="center"
@@ -251,7 +251,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/layout2"
                     app:layout_constraintVertical_bias="0.275">
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant1txt"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -264,7 +264,7 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant1coef"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -277,7 +277,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant1cc1"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -292,7 +292,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant1cc2"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -305,7 +305,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant1exam"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -343,7 +343,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/etudiant1"
                     app:layout_constraintVertical_bias="0.275">
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant2txt"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -356,7 +356,7 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant2coef"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -369,7 +369,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant2cc1"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -384,7 +384,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant2cc2"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -397,7 +397,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant2exam"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -436,7 +436,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/centerView2"
                     app:layout_constraintVertical_bias="0.275">
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant3txt"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -449,7 +449,7 @@
                         android:textSize="16sp"
                         android:textStyle="bold"
                         />
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant3coef"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -462,7 +462,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant3cc1"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -477,7 +477,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant3cc2"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -490,7 +490,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant3exam"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -526,7 +526,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/centerView3"
                     app:layout_constraintVertical_bias="0.275">
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant4txt"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -539,7 +539,7 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant4coef"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -552,7 +552,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant4cc1"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -567,7 +567,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant4cc2"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -580,7 +580,7 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant4exam"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -616,7 +616,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/centerView4"
                     app:layout_constraintVertical_bias="0.275">
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant5txt"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -654,7 +654,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/centerView5"
                     app:layout_constraintVertical_bias="0.275">
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant6txt"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -692,7 +692,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/centerView6"
                     app:layout_constraintVertical_bias="0.275">
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant7txt"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"
@@ -729,7 +729,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="parent"
                     app:layout_constraintVertical_bias="0.275">
-                    <TextView
+                    <EditText
                         android:id="@+id/etudiant8txt"
                         android:layout_width="wrap_content"
                         android:layout_height="21dp"

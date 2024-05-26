@@ -36,6 +36,8 @@
         app:layout_constraintTop_toTopOf="@+id/view"
         app:layout_constraintVertical_bias="0.343" />
 
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/contributeCard10"
         android:layout_width="wrap_content"

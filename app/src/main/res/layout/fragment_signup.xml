@@ -102,10 +102,10 @@
         android:id="@+id/useredit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/edittxt"
-        android:minHeight="48dp"
         android:hint="nom et prenom"
+        android:minHeight="48dp"
         android:padding="12dp"
         android:singleLine="true"
         android:textSize="14sp"
@@ -130,23 +130,25 @@
 
     <!-- Edit text provided to write
           password (according to instagram UI)-->
+
     <EditText
         android:id="@+id/emailedit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/edittxt"
-        android:minHeight="48dp"
         android:hint="email.com"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         android:padding="12dp"
         android:singleLine="true"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@id/passedit"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/useredit"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.656" />
 
     <TextView
         android:id="@+id/passtxt"
